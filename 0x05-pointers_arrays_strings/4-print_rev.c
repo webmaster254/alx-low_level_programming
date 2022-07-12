@@ -1,18 +1,22 @@
 #include "main.h"
 
 /**
- * print_rev - Prints a string in reverse.
- * @s: The string to be printed.
+ *print_rev - print strings in reverse
+ *@s: characters
+ *
+ *Return: nothing
  */
+
 void print_rev(char *s)
 {
-	int len = 0, index;
+int i;
 
-	while (s[index++])
-		len++;
-
-	for (index = len - 1; index >= 0; index--)
-		_putchar(s[index]);
-
-	_putchar('\n');
+for (i = 0; s[i] != '\0'; i++)
+;
+while (i)
+{
+_putchar(s[i - 1]);
+i--;
+}
+_putchar('\n');
 }
